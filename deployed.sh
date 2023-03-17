@@ -16,7 +16,7 @@ function CommandSupportCheck(){
 # 同步最新代码
 CommandSupportCheck "git"
 echo "===========>开始同步仓库代码"
-git pull
+git checkout main && git pull
 echo "===========>同步仓库代码完成"
 
 # # 初始化前端项目（镜像内部处理）
