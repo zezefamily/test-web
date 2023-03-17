@@ -1,10 +1,11 @@
 <template>
   <div class="hello">
-    <div>
+    <!-- <div>
       屏幕宽度：{{ screenWidth }}px
       <br>
       屏幕高度：{{ screenHeight }}px
-    </div>
+    </div> -->
+    <h>今天跟剑锋一起撸串</h>
     <div class="h5View" ref="rootView">
       <div class="Item" ref="testView1"></div>
       <div class="Item1" ref="testView2"></div>
