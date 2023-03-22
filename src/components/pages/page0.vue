@@ -3,7 +3,7 @@
         <div class="">
             <el-carousel height="500px">
                 <el-carousel-item v-for="item in 4" :key="item">
-                    <h3 class="small">{{ item }}</h3>
+                    <el-image :src="src"></el-image>
                 </el-carousel-item>
             </el-carousel>
         </div>
@@ -16,7 +16,8 @@
 export default {
     data(){
         return {
-            name:"page0"
+            name:"page0",
+            src: 'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg'
         }
     },
 

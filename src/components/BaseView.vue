@@ -12,7 +12,7 @@
             <el-main class="test">
                 <router-view></router-view>
             </el-main>
-            <el-footer>Footer</el-footer>
+            <el-footer v-show="isShow">Footer</el-footer>
         </el-container>
     </div>
 </template>
@@ -23,7 +23,8 @@
 export default {
     data(){
         return {
-            activeIndex: "home"
+            activeIndex: "home",
+            isShow: true
         }
     },
     created(){
@@ -50,6 +51,12 @@ export default {
             console.log("=====>"+key,keyPath);
             // this.router.push({name: key})
             console.log("+++++"+this.$router.push({name: key}))
+            console.log("-----"+this.$router.name)
+            if (key === "chatGpt") {
+                this.isShow = false
+            } else {
+                this.isShow = true
+            }
         }
     }
 }
