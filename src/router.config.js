@@ -11,11 +11,11 @@ import Page3 from "./components/pages/page3"
 
 
 const routes = [
-    { path: '*', component: Page0 },
-    { path: '/page0', component: Page0 },
-    { path: '/page1', component: Page1 },
-    { path: '/page2', component: Page2 },
-    { path: '/page3', component: Page3 }
+    { path: '*', name: "home", component: Page0 },
+    { path: '/page0',name: "home", component: Page0 },
+    { path: '/page1', name: "chatGpt",component: Page1 },
+    { path: '/page2', name: "news", component: Page2 },
+    { path: '/page3', name: "more",component: Page3 }
 ];
 
 

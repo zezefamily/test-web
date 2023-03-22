@@ -1,21 +1,20 @@
 <template>
-    <!-- <div class="base"> -->
+    <div class="base">
         <el-container>
             <el-header>
                 <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-                    <el-menu-item index="1">Item1</el-menu-item>
-                    <el-menu-item index="2">ChatGPT</el-menu-item>
-                    <el-menu-item index="3">Item3</el-menu-item>
-                    <el-menu-item index="4">Item4</el-menu-item>
+                    <el-menu-item index="home">Home</el-menu-item>
+                    <el-menu-item index="chatGpt">ChatGPT</el-menu-item>
+                    <el-menu-item index="news">News</el-menu-item>
+                    <el-menu-item index="more">More</el-menu-item>
                 </el-menu>
             </el-header>
-            <el-main>
-                Main
+            <el-main class="test">
                 <router-view></router-view>
             </el-main>
             <el-footer>Footer</el-footer>
         </el-container>
-    <!-- </div> -->
+    </div>
 </template>
 
 
@@ -24,7 +23,7 @@
 export default {
     data(){
         return {
-            activeIndex: "1"
+            activeIndex: "home"
         }
     },
     created(){
@@ -48,13 +47,15 @@ export default {
     },
     methods:{
         handleSelect(key, keyPath) {
-            console.log(key, keyPath);
+            console.log("=====>"+key,keyPath);
+            // this.router.push({name: key})
+            console.log("+++++"+this.$router.push({name: key}))
         }
     }
 }
 </script>
 
-<style>
+<style scope>
   .el-header, .el-footer {
     background-color: #ffffff;
     color: #333;
@@ -69,11 +70,12 @@ export default {
     line-height: 200px;
   }
   
-  .el-main {
+  .base .el-main {
     background-color: #E9EEF3;
     color: #333;
     text-align: center;
     line-height: 160px;
+    padding: 0px;
   }
   
   body > .el-container {

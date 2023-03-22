@@ -27,4 +27,7 @@ export default {
 /* html {
   touch-action: manipulation;
 } */
+body, p {
+  margin: 0;
+}
 </style>
