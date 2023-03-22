@@ -5,7 +5,6 @@
       <br>
       屏幕高度：{{ screenHeight }}px
     </div> -->
-    <h>今天跟剑锋一起撸串</h>
     <div class="h5View" ref="rootView">
       <div class="Item" ref="testView1"></div>
       <div class="Item1" ref="testView2"></div>
@@ -35,8 +34,19 @@ export default {
     this.screenHeight = window.innerHeight;
     this.loadHitView(this.$refs.testView1,"testView1")
     this.loadHitView(this.$refs.testView2,"testView2")
+    var x = 10;
+    var b = this.testVar()
+    console.log("x =====>"+ x)
+    console.log("b =====>"+ b)
+
   },
   methods: {
+    testVar(num){
+      if (num === 101){
+        var x = 100;
+      }
+      return x;
+    },
     loadHitView(el,key){
       const elRootRect = el.getBoundingClientRect();
       console.log("elRootRect:"+ elRootRect.x,elRootRect.y,elRootRect.width,elRootRect.height)

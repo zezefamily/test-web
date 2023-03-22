@@ -1,17 +1,16 @@
 <template>
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <HelloWorld msg="测试个东西"/>
+    <BaseView />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import BaseView from './components/BaseView.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BaseView
   }
 }
 </script>
@@ -23,7 +22,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 64px;
+  margin: 0px;
 }
 /* html {
   touch-action: manipulation;
