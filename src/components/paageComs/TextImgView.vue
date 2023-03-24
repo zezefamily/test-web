@@ -1,7 +1,9 @@
 <template>
     <div class="text-image" :style=reverse>
-        <el-text class="text">Hello world</el-text>
-        <el-image class="image">Image</el-image>
+        <el-text class="text-container">
+            Hello world
+        </el-text>
+        <el-image class="image" src="https://via.placeholder.com/200x200?text=200x200">Image</el-image>
     </div>
 </template>
 
@@ -36,10 +38,16 @@
     display: flex;
     justify-content: space-around;
 }
-.text {
+.text-container {
+    /* text-align: center; */
     width: 50%;
+    align-self: auto;
+    background-color: bisque;
 }
 .image {
-    width: 50%;
+    background-color: azure;
+    padding: 30px;
+    width: 200px;
+    height: 200px;
 }
 </style>

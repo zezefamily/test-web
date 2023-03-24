@@ -10,13 +10,15 @@
             </el-carousel>
         </div>
         <div class="custom-grid">
-            <div class="item item-test">
+            <div class="item item-h">
                 1
             </div>
             <grid-view class="item"></grid-view>
-            <div class="item item-test">
+            <div class="item item-h">
                 2
             </div>
+            <text-image class="item"></text-image>
+            <text-image class="item" :isReverse="true"></text-image>
             <text-image class="item"></text-image>
             <text-image class="item" :isReverse="true"></text-image>
         </div>
@@ -87,7 +89,7 @@ export default {
 .item {
     margin: 0 60px;   
 }
-.item .item-test{
+.item-h{
     height: 30px;
     background-color: #909399;
 }
