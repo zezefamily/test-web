@@ -1,5 +1,5 @@
 # 通过Dockerfile 构建一个自定义镜像
-FROM node:latest
+FROM node:16.19.1
 COPY ./ /app
 WORKDIR /app
 RUN npm install && npm run build
