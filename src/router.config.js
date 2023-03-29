@@ -8,6 +8,7 @@ import Page0 from "./components/pages/page0"
 import Page1 from "./components/pages/page1"
 import Page2 from "./components/pages/page2"
 import Page3 from "./components/pages/page3"
+// import Page4 from "./components/pages/test"
 
 
 const routes = [
@@ -15,7 +16,8 @@ const routes = [
     // { path: '/page0',name: "home", component: Page0 },
     { path: '/page1', name: "chatGpt",component: Page1 },
     { path: '/page2', name: "news", component: Page2 },
-    { path: '/page3', name: "more",component: Page3 }
+    { path: '/page3', name: "more",component: Page3 },
+    // { path: '/page4', name: "test",component: Page4 }
 ];
 
 

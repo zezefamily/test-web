@@ -7,6 +7,7 @@
                     <el-menu-item index="chatGpt">ChatGPT</el-menu-item>
                     <el-menu-item index="news">News</el-menu-item>
                     <el-menu-item index="more">More</el-menu-item>
+                    <el-menu-item index="test">Test</el-menu-item>
                 </el-menu>
             </el-header>
             <el-main class="test">
